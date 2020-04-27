@@ -1,0 +1,9 @@
+<!-- <input type="radio" name="colors" (click)="color='blue'">blue 
+<p>{{message}}</p> -->
+
+<div>
+  <input type="radio" name="colors" (click)="color='blue'">Blue
+  <input type="radio" name="colors" (click)="color='orange'">Orange
+  <input type="radio" name="colors" (click)="color='green'">Green
+</div>
+<p [appHighlight]="color">{{message}}</p>
